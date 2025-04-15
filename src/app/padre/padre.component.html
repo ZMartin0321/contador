@@ -1,0 +1,9 @@
+<div class="container">
+    <h2>Bienvenido, {{nombre}}</h2>
+    <button (click)="cambiarNombre()">Cambiar Nombre</button>
+    <app-hijo [nombre]="nombre" 
+              (sumar)="actualizarContador($event)" 
+              (restar)="restarContador($event)"></app-hijo>
+    <h3>Contador de Estudiante: {{contadorEstudiante}}</h3>
+    <h3>Contador de Programador Junior: {{contadorProgramador}}</h3>
+  </div>
